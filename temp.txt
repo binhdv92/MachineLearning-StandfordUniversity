@@ -1,0 +1,40 @@
+Consider the layer $ls^{th}$.
+$$
+\theta^{(j-1)}a^{(j-1)}=z^{(j)}
+\rightarrow activation\ g(z^{(j)})\rightarrow a^{(j)}
+$$
+$$
+\begin{bmatrix}
+    \theta_{10}^{(j-1)} & \theta_{11}^{(j-1)} & \theta_{12}^{(j-1)} & \cdots & \theta_{1k^{(j-1)}}^{(j-1)} & \cdots & \theta_{1s^(j-1)}^{j-1}\\
+    \theta_{20}^{(j-1)} & \theta_{21}^{(j-1)} & \theta_{22}^{(j-1)} & \cdots & \theta_{2k^{(j-1)}}^{(j-1)} & \cdots & \theta_{2s^(j-1)}^{j-1}\\
+    \vdots\\
+    \theta_{k^{(j-1)}0}^{(j-1)} & \theta_{k^{(j-1)}1}^{(j-1)} & \theta_{k^{(j-1)}2}^{(j-1)} & \cdots & \theta_{k^{(j-1)}k^{(j-1)}}^{(j-1)} & \cdots   & \theta_{k^{(j-1)}s^(j-1)}^{j-1}\\
+    \vdots\\
+    \theta_{s^{(j)}0}^{(j-1)} & \theta_{s^{(j)}1}^{(j-1)} & \theta_{s^{(j)}2}^{(j-1)} & \cdots & \theta_{s^{(j)}k^{(j-1)}}^{(j-1)} & \cdots         & \theta_{s^{(j)}s^{(j-1)}}^{(j-1)}\
+\end{bmatrix}\begin{bmatrix}
+    a_{0}^{(j-1)}\\
+    a_{1}^{(j-1)}\\
+    a_{2}^{(j-1)}\\
+    \vdots\\
+    a_{k^{(j-1)}}^{(j-1)}\\
+    \vdots\\
+    a_{s^{(j-1)}}^{(j-1)}
+\end{bmatrix}=
+\begin{bmatrix}
+    z_{1}^{(j)}\\
+    z_{2}^{(j)}\\
+    \vdots\\
+    z_{k^{(j)}}^{(j)}\\
+    \vdots\\
+    z_{s^{(j)}}^{(j)}
+\end{bmatrix}
+\rightarrow activation\ a^{(j)}=g(z^{(j)})\rightarrow
+\begin{bmatrix}
+    a_{1}^{(j)}\\
+    a_{2}^{(j)}\\
+    \vdots\\
+    a_{k^{(j)}}^{(j)}\\
+    \vdots\\
+    a_{s^{(j)}}^{(j)}
+\end{bmatrix}
+$$
